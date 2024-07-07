@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="quiz.css" rel="stylesheet" type="text/css" />
+  <title>Quiz</title>
+</head>
+  <style>
+    body {
+
+            font-family: cursive;
+            height: 100vh;
+            background-color: #161A30;
+    }
+    html {
+            cursor: url("cursor.png"), auto !important;
+            height: auto;
+    }
+    
+    .nav-links {
+            display: flex;
+            justify-content: center;
+            background-color: darkseagreen;
+            color: black;
+            font-family: cursive;
+    }
+
+    .sticky {
+            position: fixed;
+            top: -0;
+            width: 100%;
+    }
+
+    .links-index-nav {
+            margin: 20px;
+            padding-left: 50px;
+            color: black;
+            text-decoration: none;
+            font-weight: 700;
+    }
+
+    .links-index-nav:hover {
+            text-decoration: underline;
+            font-style: italic;
+            color: #D6FB41;
+    }
+    #quiz{
+
+      position: relative;
+      top: 13px;
+      left: -10px;
+      background-color: #161A30;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #quiz-content{
+      height: 600px;
+      background-color: #fff;
+      width: 1000px;
+      border-radius: 20px;
+      position: relative;
+    }
+
+    #quiz-content h1{
+      width: 40%;
+      padding-bottom: 30px;
+      padding-left: 35px;
+      font-size: 45px;
+      font-weight: 600;
+      position: absolute;
+      top: 5px;
+    }
+
+
+    #questions{
+      width: 97%;
+      position: absolute;
+      top: 120px;
+      padding-left: 25px;
+    }
+
+    #question{
+      font-family: "Gill Sans", sans-serif;
+    }
+
+    #quiz-answers{
+      position: absolute;
+      top: 200px;
+      left: 0px;
+      width: 95%;
+      padding: 25px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #answer-buttons{
+      margin-right: 25px;
+      width: 80%;
+    }
+
+
+
+    .btn{
+      background: #fff;
+      color: #222;
+      font-weight: 500;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      text-align: left;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 1s;
+    }
+
+    .btn:hover:not([disabled]){
+      background: #222;
+      color: #fff;
+    }
+
+    .btn:disabled{
+      cursor: no-drop;
+    }
+
+    #next-button{
+      position: absolute;
+      top: 470px;
+      width: 100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #next-button button{
+      background: #001e4d;
+      color:#fff;
+      font-weight: 500;
+      width: 150px;
+      border: 0;
+      padding: 10px;
+      margin: 20px auto 0;
+      border-radius: 4px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .correct{
+      background: #9aeabc;
+    }
+
+    .incorrect{
+      background: #ff9393;
+    }
+  </style>
+  <body>
+    <div class="nav-links" id="navbar">
+      <a href="index.html"><img src="Undersea Wonders Hub.png" style="height:60px; width:auto;border-radius:44px;">
+            <a href="index.html" class="links-index-nav text"><b>Home 🏠</b></a>
+            <a href="#evidence" class="links-index-nav text">Action Taken🚶🏻</a>
+            <a href="blog.html" class="links-index-nav text">Blog 📰</a>
+            <a href="https://undersea-wonders.printify.me/products" class="links-index-nav text">Store🏪</a>
+            <a href="quiz.html" class="links-index-nav text">Quiz🤔</a>
+            <a href="#game" class="links-index-nav text">Game 🎮</a>
+            <a href="contact us.html" class="links-index-nav text">Contact Us 📞</a>
+    </div>
+    <div id="quiz">
+          <div id="quiz-content">
+      <h1>Quiz</h1>
+
+      <div id="questions">
+        <h2 id="question">Question goes here</h2>
+      </div>
+
+      <div id="quiz-answers">
+        <div id="answer-buttons">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+
+        </div>
+      </div>
+      <div id="next-button">
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+
+</html>

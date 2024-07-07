@@ -1,0 +1,487 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width">
+          <title>Undersea Wonders Hub</title>
+          <link href="style.css" rel="stylesheet" type="text/css" />
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+Arabic:wght@600&family=Poppins&display=swap"
+                  rel="stylesheet">
+          <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+          body {
+
+                  font-family: cursive;
+                  background-color: skyblue;
+
+          }
+
+          html {
+                  cursor: url("cursor.png"), auto !important;
+                  height: auto;
+          }
+    
+          .nav-links {
+                  display: flex;
+                  justify-content: center;
+                  background-color: darkseagreen;
+                  color: black;
+                  font-family: cursive;
+          }
+
+          .sticky {
+                  position: fixed;
+                  top: -0;
+                  width: 100%;
+          }
+
+          .links-index-nav {
+                  margin: 20px;
+                  padding-left: 50px;
+                  color: black;
+                  text-decoration: none;
+                  font-weight: 700;
+          }
+
+          .links-index-nav:hover {
+                  text-decoration: underline;
+                  font-style: italic;
+                  color: #D6FB41;
+          }
+
+          .hero {
+                  display: flex;
+                  justify-content: space-evenly;
+                  font-family: cursive;
+
+          }
+
+          .hero-1 {
+                  display: flex;
+                  justify-content: space-evenly;
+          }
+
+          
+
+          #cursor {
+                  position: fixed;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  background-color: #fff;
+                  transition: 0.1s;
+                  transform: translate(-50%, -50%);
+                  pointer-events: none;
+                  mix-blend-mode: difference;
+          }
+
+    #evidence {
+            width: 100%;
+            height: 3680px;
+            position: relative;
+            top: 50px;
+            background-color: #161A30;
+            display: flex;
+    }
+
+    #evidence-text {
+            width: 40%;
+            height: 20%;
+            position: sticky;
+            left: -70px;
+            top: 5px;
+            color: white;
+            text-align: right;
+            margin-top: 65px;
+            margin-right: 50px;
+            font-family: system-ui;
+            font-size: 20px;
+    }
+
+    #evidence-content {
+            position: absolute;
+            left: 41%;
+            top: 50px;
+            height: auto;
+            width: 58%;
+    }
+
+    .evidences {
+            position: relative;
+            left: 0px;
+            border-bottom: 2px solid white;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            display: flex;
+    }
+
+    .evidences-image img {
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 55px;
+    }
+
+    .evidences-content {
+            color: white;
+            margin-left: 50px;
+    }
+
+    .evidences-image img {
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 55px;
+    }
+
+    .evidences-content {
+            color: white;
+            margin-left: 50px;
+    }
+
+          #footer-basic {
+                  padding: 40px 0;
+                  background-color: lightblue;
+                  color: #4b4c4d;
+                  position: absolute;
+                  top: 6375px;
+                  left: -10px;
+                  width: 105%;
+          }
+
+          #footer-basic ul {
+                  padding: 0;
+                  list-style: none;
+                  text-align: center;
+                  font-size: 18px;
+                  line-height: 1.6;
+                  margin-bottom: 0;
+          }
+
+          #footer-basic li {
+                  padding: 0 10px;
+          }
+
+          .list-inline li {
+                  display: inline-block;
+          }
+
+          #footer-basic ul a {
+                  color: black;
+                  text-decoration: none;
+                  opacity: 0.8;
+          }
+
+          #footer-basic ul a:hover {
+                  opacity: 1;
+          }
+
+          #footer-basic .social {
+                  text-align: center;
+                  padding-bottom: 25px;
+          }
+
+          #footer-basic .social>a {
+                  font-size: 24px;
+                  width: 40px;
+                  height: 40px;
+                  line-height: 40px;
+                  display: inline-block;
+                  text-align: center;
+                  border-radius: 50%;
+                  border: 1px solid #ccc;
+                  margin: 0 8px;
+                  color: inherit;
+                  opacity: 0.75;
+          }
+
+          #footer-basic .social>a:hover {
+                  opacity: 0.9;
+          }
+
+          #footer-basic .copyright {
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 13px;
+                  color: black;
+                  margin-bottom: 0;
+          }
+
+          .tagline {
+                  margin-top: 15px;
+                  text-align: center;
+                  width: 100%;
+                  color: #aaa;
+          }
+
+          #game h1 {
+                  font-size: 80px;
+                  color: #fff;
+                  text-align: center;
+                  -webkit-animation: glow 1s ease-in-out infinite alternate;
+                  -moz-animation: glow 1s ease-in-out infinite alternate;
+                  animation: glow 1s ease-in-out infinite alternate;
+          }
+
+          @-webkit-keyframes glow {
+                  from {
+                          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                  }
+
+                  to {
+                          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                  }
+          }
+  </style>
+<body>
+  <div id="cursor"></div>
+  <div id="main">
+        <div class="nav-links" id="navbar">
+          <a href="index.html"><img src="Undersea Wonders Hub.png" style="height:60px; width:auto;border-radius:44px;">
+                <a href="index.html" class="links-index-nav text"><b>Home 🏠</b></a>
+                <a href="#evidence" class="links-index-nav text">Action Taken🚶🏻</a>
+                <a href="blog.html" class="links-index-nav text">Blog 📰</a>
+                <a href="https://undersea-wonders.printify.me/products" class="links-index-nav text">Store🏪</a>
+                <a href="quiz.html" class="links-index-nav text">Quiz🤔</a>
+                <a href="#game" class="links-index-nav text">Game 🎮</a>
+                <a href="contact us.html" class="links-index-nav text">Contact Us 📞</a>
+        </div>
+
+  <div class="hero">
+    <div class="hero-text" id="hero-redirect">
+      <h1>
+              <span style="font-size: 50px;">The <br>Goal 14:</span> <br><span
+                      style="font-size: 70px;">Life Below Water</span>
+      </h1>
+      <p><span style="background-color:purple; color: white;">Conserve and sustainably use the oceans, seas and marine resources for sustainable
+              development.</span>
+      </p>
+      <div class="hero-img">
+              <img src="14-Life-below-water.png" alt="Undersea Wonders Hub"
+                      height="400px" width="400px" style="margin-left: 400px;">
+      </div>
+      <h1>Undersea Wonders Hub</h1>
+      
+      <p> Welcome to Undersea Wonders Hub, where our mission is to protect and preserve life below water. Dive into a world of unparalleled beauty and biodiversity as we champion the conservation of our oceans and all the magnificent creatures that call it home. From the vibrant coral reefs to the mysterious depths of the abyss, every corner of the ocean holds invaluable treasures waiting to be discovered and safeguarded for future generations. Join us in our endeavor to promote sustainable practices, combat pollution, and combat climate change to ensure that the wonders beneath the waves continue to thrive. Together, we can make a difference and ensure a flourishing marine ecosystem for all. Discover, explore, and protect.</p>
+    </div>
+    <div class="hero-img">
+      <img src="Website Logo Undersea Wonders Hub.PNG" alt="Undersea Wonders Hub"
+              height="400px" width="400px" style="margin-top: 700px;">
+    </div>
+    </div>
+    <div class="hero-1">
+    <div class="hero-img">
+      <img src="save underwater animals.png" alt="Undersea Wonders Hub">
+    </div>
+    <div class="hero-text">
+      <h1>Deep Dive for Change</h1>
+
+      <p> Dive deeper into the mission of conservation and exploration with Undersea Wonders Hub. Our commitment to saving life below water extends beyond advocacy to action. Through innovative research, education, and community engagement, we strive to empower individuals and organizations to become stewards of our oceans. Explore our initiatives aimed at preserving marine habitats, promoting sustainable fisheries, and raising awareness about the importance of biodiversity. Together, let's delve into the depths of understanding and appreciation for our planet's most precious resource - the ocean. Join us in our quest to protect and preserve life below water for the benefit of all. Welcome to Undersea Wonders Hub, where every wave brings a new opportunity for positive change.
+</p>
+    </div>
+  </div>
+    
+  <div id="game">
+<h1>Ocean Cleanup Challenge</h1>
+    <iframe src="https://scratch.mit.edu/projects/988392020/embed" allowtransparency="true" width="100%" height="720px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  <div id="evidence">
+    <div id="evidence-text">
+      <h1>Undersea Wonders Hub</h1>
+    </div>
+    <div id="evidence-content">
+      <div id="evidence-1" class="evidences">
+        <div id="evidence-1-image" class="evidences-image">
+          <img src="marine1.png" alt="sunrise-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-1-content" class="evidences-content">
+          <h2>Understanding Marine Pollution</h2>
+          <p>Marine pollution encompasses a range of contaminants that adversely affect the health of oceans and their inhabitants. At its core, marine pollution refers to the introduction of harmful substances into marine environments, leading to ecological imbalance and the degradation of underwater ecosystems.</p>
+        </div>
+      </div>
+
+      <div id="evidence-2" class="evidences">
+        <div id="evidence-2-image" class="evidences-image">
+          <img src="marine2.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-2-content" class="evidences-content">
+          <h2>Causes of Marine Pollution</h2>
+          <p>Marine pollution arises from a multitude of sources, each contributing to the deterioration of oceanic ecosystems in distinct ways. Among the primary culprits are land-based activities, which account for a significant portion of the pollutants entering marine environments.</p>
+        </div>
+      </div>
+
+      <div id="evidence-3" class="evidences">
+        <div id="evidence-3-image" class="evidences-image">
+          <img src="marine3.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-3-content" class="evidences-content">
+          <h2>Solutions and Actions</h2>
+          <p>Addressing marine pollution necessitates a concerted effort across multiple fronts, involving governments, industries, communities, and individuals. Effective solutions encompass a range of strategies aimed at reducing pollution at its source, promoting sustainable practices, and fostering greater awareness and engagement.</p>
+        </div>
+      </div>
+
+      <div id="evidence-4" class="evidences">
+        <div id="evidence-4-image" class="evidences-image">
+          <img src="marine4.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-4-content" class="evidences-content">
+          <h2>Engaging with Undersea Wonders Hub</h2>
+          <p>Engagement with Undersea Wonders Hub offers a gateway to explore, understand, and protect the remarkable diversity of marine life that inhabits our oceans. Through a variety of resources, events, and opportunities, individuals and communities can actively contribute to conservation efforts and promote sustainable practices that safeguard undersea ecosystems.</p>
+        </div>
+      </div>
+
+      <div id="evidence-5" class="evidences">
+        <div id="evidence-5-image" class="evidences-image">
+          <img src="marine5.png" alt="coral-image"
+            height="150px" width="150px">
+        </div>
+        <div id="evidence-5-content" class="evidences-content">
+          <h2>Introduction to Small Scale Fishers</h2>
+          <p>Within the depths of our oceans lie not just incredible marine life but also the livelihoods of millions of individuals who depend on fishing for sustenance and income. Small-scale fishers, often overlooked in the vast expanse of the global fishing industry, play a crucial role in sustainable fishing practices and the preservation of marine ecosystems.</p>
+        </div>
+      </div>
+
+      <div id="evidence-6" class="evidences">
+        <div id="evidence-6-image" class="evidences-image">
+          <img src="marine6.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-6-content" class="evidences-content">
+          <h2>Challenges Faced by Small Scale Fishers</h2>
+          <p>Navigating the vast expanse of our oceans, small-scale fishers encounter a multitude of challenges that threaten both their livelihoods and the health of marine ecosystems. Environmental pressures loom large, with overfishing casting a shadow over fish stocks worldwide.</p>
+        </div>
+      </div>
+
+      <div id="evidence-7" class="evidences">
+        <div id="evidence-7-image" class="evidences-image">
+          <img src="marine7.png" alt="coral-image"
+            height="150px" width="150px">
+        </div>
+        <div id="evidence-7-content" class="evidences-content">
+          <h2>Solutions and Support for Small Scale Fishers</h2>
+          <p>Amidst the challenges faced by small-scale fishers, there is a growing recognition of the need for comprehensive solutions and support mechanisms to safeguard their livelihoods and the health of marine ecosystems. Initiatives aimed at promoting sustainable fishing practices and marine conservation efforts offer promising avenues for addressing the environmental pressures confronting small-scale fishers.</p>
+        </div>
+      </div>
+
+      <div id="evidence-8" class="evidences">
+        <div id="evidence-8-image" class="evidences-image">
+          <img src="marine8.png" alt="coral-image"
+            height="150px" width="150px">
+        </div>
+        <div id="evidence-8-content" class="evidences-content">
+          <h2>Get Involved</h2>
+          <p>Empowering small-scale fishers and promoting sustainable fishing practices requires collective action and engagement from individuals, organizations, and communities worldwide. There are numerous ways to get involved and make a meaningful difference in supporting small-scale fishers and safeguarding marine ecosystems.</p>
+        </div>
+      </div>
+  <div id="evidence-9" class="evidences">
+        <div id="evidence-9-image" class="evidences-image">
+          <img src="marine9.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-9-content" class="evidences-content">
+          <h2>Introduction to Sustainable Fishing</h2>
+          <p>Sustainable fishing stands as a beacon of hope amid the turbulent waters of global marine conservation efforts. At its core, sustainable fishing embodies the ethos of responsible stewardship, acknowledging the delicate balance between human livelihoods and the health of marine ecosystems.</p>
+    </div>
+  </div>
+  <div id="evidence-10" class="evidences">
+        <div id="evidence-10-image" class="evidences-image">
+          <img src="marine10.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-10-content" class="evidences-content">
+          <h2>Principles of Sustainable Fishing</h2>
+          <p>At the heart of sustainable fishing lie a set of guiding principles that serve as beacons illuminating the path towards responsible stewardship of marine resources. These principles embody a holistic approach to fishing, one that transcends mere extraction to encompass the preservation of marine biodiversity, the maintenance of ecological balance, and the safeguarding of future generations' right to access abundant and diverse seafood.</p>
+        </div>
+      </div>
+  <div id="evidence-11" class="evidences">
+        <div id="evidence-11-image" class="evidences-image">
+          <img src="marine11.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-11-content" class="evidences-content">
+          <h2>Benefits of Sustainable Fishing</h2>
+          <p>Embracing sustainable fishing practices yields a myriad of benefits that extend far beyond the confines of the fishing industry, rippling through marine ecosystems, coastal communities, and global food systems alike. At its core, sustainable fishing offers a pathway towards harmonizing human needs with ecological imperatives, fostering resilience in marine ecosystems while enhancing the well-being of communities reliant on fisheries for their livelihoods.</p>
+        </div>
+      </div>
+  <div id="evidence-12" class="evidences">
+        <div id="evidence-12-image" class="evidences-image">
+          <img src="marine12.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-12-content" class="evidences-content">
+          <h2>Initiatives and Practices for Sustainable Fishing</h2>
+          <p>Across the globe, a multitude of initiatives and practices are driving the transition towards sustainable fishing, forging partnerships between governments, industry stakeholders, conservation organizations, and consumers. These collaborative efforts are instrumental in shaping the future of marine conservation and fisheries management, paving the way for a more sustainable and equitable relationship between humanity and the oceans.</p>
+        </div>
+      </div>
+  <div id="evidence-13" class="evidences">
+        <div id="evidence-13-image" class="evidences-image">
+          <img src="marine13.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-13-content" class="evidences-content">
+          <h2>Introduction to Coastal and Marine Conservation</h2>
+          <p> These environments, teeming with life and intricately connected ecosystems, hold immeasurable value for both nature and humanity. From vibrant coral reefs to expansive seagrass meadows and the mysterious depths of the open ocean, coastal and marine areas encompass a diverse array of habitats that support an astonishing variety of species.</p>
+        </div>
+      </div>
+  <div id="evidence-14" class="evidences">
+        <div id="evidence-14-image" class="evidences-image">
+          <img src="marine14.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-14-content" class="evidences-content">
+          <h2>Strategies for Conservation</h2>
+          <p>One cornerstone of marine conservation is the establishment of Marine Protected Areas (MPAs). These designated zones, ranging from marine reserves to marine parks and sanctuaries, provide refuge for marine species and habitats, allowing populations to recover and thrive free from the pressures of human exploitation. By implementing MPAs with well-defined management plans and enforcement measures, we can protect biodiversity hotspots, preserve critical habitats, and promote ecosystem resilience in the face of climate change.</p>
+        </div>
+      </div>
+  <div id="evidence-15" class="evidences">
+        <div id="evidence-15-image" class="evidences-image">
+          <img src="marine15.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-15-content" class="evidences-content">
+          <h2>Case Studies and Success Stories</h2>
+          <p>Explore inspiring tales of successful conservation projects and transformative initiatives that have made a tangible difference in safeguarding coastal and marine ecosystems around the globe. These case studies offer compelling evidence of the power of collective action and innovative approaches in preserving marine biodiversity and promoting sustainable resource management.</p>
+        </div>
+      </div>
+  <div id="evidence-16" class="evidences">
+        <div id="evidence-16-image" class="evidences-image">
+          <img src="marine16.png" alt="coral-image" height="150px"
+            width="150px">
+        </div>
+        <div id="evidence-16-content" class="evidences-content">
+          <h2>Get Involved</h2>
+          <p>Empower yourself to make a positive impact on the conservation of coastal and marine ecosystems by getting involved in meaningful initiatives and taking action to protect our oceans. There are numerous opportunities for individuals to contribute their time, skills, and resources towards the preservation of these invaluable environments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <div id="footer-basic">
+      <footer>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="index.html">Home 🏠</a></li>
+          <li class="list-inline-item"><a href="#evidence">Action Taken🚶🏻</a></li>
+          <li class="list-inline-item"><a href="blog.html">Blog 📰</a></li>
+          <li class="list-inline-item"><a href="quiz.html">Quiz🤔</a></li>
+          <li class="list-inline-item"><a href="#game">Game 🎮</a></li>
+          <li class="list-inline-item"><a href="contact us.html">Contact Us 📞</a></li>
+        </ul>
+        <p class="copyright">Undersea Wonders Hub © 2024</p>
+        <div class="tagline">
+        </div>
+      </footer>
+    </div>
+      <script>
+        const cursor = document.querySelector("#cursor");
+        document.addEventListener("mousemove", (e) => {
+          cursor.style.left = e.pageX + "px";
+          cursor.style.top = e.pageY + "px";
+        })
+      </script>
+</body>
+</html>  
